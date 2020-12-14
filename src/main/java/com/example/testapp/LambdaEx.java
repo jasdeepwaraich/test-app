@@ -8,16 +8,13 @@ public class LambdaEx {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int length=10; 
-        Drawable d=new Drawable()
-        {  
-            public void draw()
-            {
-            	System.out.println("Drawing "+length);
-            	
-            }  
+		int len=10;  
+        
+        //with lambda  
+        Drawable d2=()->{  
+            System.out.println("Drawing "+len);  
         };  
-        d.draw(); 
+        d2.draw();
 
 	}
 
